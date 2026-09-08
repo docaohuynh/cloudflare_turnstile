@@ -616,7 +616,7 @@ class _CloudflareTurnstileState extends State<CloudflareTurnstile> {
         return;
       }
       _ready(false);
-      _addError(TurnstileException(error.description));
+      _addError(TurnstileException(error.description ?? 'Unknown error'));
     },
     onPermissionRequest: (_, __) async => PermissionResponse(),
   );
@@ -738,7 +738,7 @@ class _TurnstileInvisible extends CloudflareTurnstile {
         if (error.type == WebResourceErrorType.CANNOT_CONNECT_TO_HOST) {
           return;
         }
-        controller?.error = TurnstileException(error.description);
+        controller?.error = TurnstileException(error.description ?? 'Unknown error');
         if (!_completer!.isCompleted) {
           _completer?.completeError(error);
         }
