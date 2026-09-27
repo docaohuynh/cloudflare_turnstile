@@ -738,7 +738,9 @@ class _TurnstileInvisible extends CloudflareTurnstile {
         if (error.type == WebResourceErrorType.CANNOT_CONNECT_TO_HOST) {
           return;
         }
-        controller?.error = TurnstileException(error.description ?? 'Unknown error');
+        controller?.error = TurnstileException(
+          error.description ?? 'Unknown error',
+        );
         if (!_completer!.isCompleted) {
           _completer?.completeError(error);
         }
