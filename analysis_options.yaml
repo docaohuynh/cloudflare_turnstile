@@ -7,6 +7,14 @@ analyzer:
   errors:
     unnecessary_library_directive: ignore
     inference_failure_on_function_return_type: ignore
+  exclude:
+    - build/**
+    - android/**
+    - ios/**
+    - web/**
+    - windows/**
+    - macos/**
+    - linux/**
 
 linter:
   rules:
