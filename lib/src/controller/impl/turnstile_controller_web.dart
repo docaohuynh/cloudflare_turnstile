@@ -3,7 +3,7 @@ import 'dart:js_interop' show JS;
 
 import 'package:cloudflare_turnstile/src/controller/interface.dart' as i;
 import 'package:cloudflare_turnstile/src/turnstile_exception.dart';
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 
 @JS('turnstile.isExpired')
 external bool _isTokenExpired([String? widgetId]);

@@ -3,7 +3,7 @@
 import 'package:cloudflare_turnstile/src/controller/interface.dart';
 import 'package:cloudflare_turnstile/src/widget/interface.dart' as i;
 import 'package:cloudflare_turnstile/src/widget/turnstile_options.dart';
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 
 /// Facade class for Cloudflare Turnstile.
 class CloudflareTurnstile extends StatelessWidget

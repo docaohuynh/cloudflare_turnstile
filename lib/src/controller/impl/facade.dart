@@ -1,7 +1,7 @@
 // ignore: avoid_web_libraries_in_flutter
 import 'package:cloudflare_turnstile/src/controller/interface.dart' as i;
 import 'package:cloudflare_turnstile/src/turnstile_exception.dart';
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 
 /// Facade class
 class TurnstileController extends ChangeNotifier

@@ -7,7 +7,7 @@ import 'package:cloudflare_turnstile/src/turnstile_exception.dart';
 import 'package:cloudflare_turnstile/src/widget/interface.dart' as i;
 import 'package:cloudflare_turnstile/src/widget/turnstile_options.dart';
 import 'package:cloudflare_turnstile/src/widget/turnstile_validator.dart';
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:zikzak_inappwebview/zikzak_inappwebview.dart';
 
 const String _tokenReceivedJSHandler =

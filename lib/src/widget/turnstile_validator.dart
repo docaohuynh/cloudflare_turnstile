@@ -1,5 +1,5 @@
 import 'package:cloudflare_turnstile/src/widget/turnstile_options.dart';
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 
 /// Helper class to validate parameters passed to Cloudflare Turnstile.
 @immutable
